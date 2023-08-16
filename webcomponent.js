@@ -56,13 +56,20 @@
 
         //Getters and Setters
         get widgetText() {
-            return this._tagType;
+            return this._tagText;
         }
 
         set widgetText(value) {
             this._tagText = value;
         }
-        // End - Getters and Setters
+        
+        get headingType() {
+            return this._tagType;
+            }
+
+        set headingType(value) {
+            this._tagType = value;
+        }
 
         redraw(){
             if (this._tagContainer){
